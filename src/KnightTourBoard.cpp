@@ -21,7 +21,6 @@ KnightTourBoard::KnightTourBoard(int size)
 
 KnightTourBoard::~KnightTourBoard() = default;
 
-
 //makeMove function should update board, update isVisited, add to move counter
 bool KnightTourBoard::makeMove(int row, int col) { 
     if(!isValidMove(row,col)) //error case
