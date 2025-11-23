@@ -17,27 +17,32 @@ const int KnightTourBoard::KNIGHT_MOVES[8][2] = {
 
 //initialization for arbitrary size
 KnightTourBoard::KnightTourBoard(int size)
-    : size_(size), board_(size, std::vector<int>(size, 0)), currentMoveNumber_(0) {}
+    : size_(size), board_(size, std::vector<int>(size, 0)), currentMoveNumber_(0) {}    //initialization sets initial values to zero
 
 KnightTourBoard::~KnightTourBoard() = default;
 
+
+//makeMove function should update board, update isVisited, add to move counter
 bool KnightTourBoard::makeMove(int row, int col) { 
     if(!isValidMove(row,col)) //error case
         return(0); 
 
+    board_[row][col] = ++currentMoveNumber_; //store currentMoveNumber as int 
+    return(true);             
 }
 
-// note: board is represented as 2D array, (0,0) at top left corner
-// struct used to hold board information (struct fields public by default)
-// size = row = col (square)
 bool KnightTourBoard::isValidMove(int row, int col) const {
-    Position current(row,col);
+    Position current(row,col);  //use to temp store current locations
     return(current.isValid(this->getSize()) && !isVisited(row,col));    //use position and visited checker 
 }
 
+// note: should return a vector of all valid pairs from the current location
 std::vector<std::pair<int, int>> KnightTourBoard::getLegalMoves(int currentRow, int currentCol) const {
-    // note: should return a vector of all valid pairs from the current location
     std::vector<std::pair<int, int>> validMoves;
+
+    if(!Position(currentRow,currentCol).isValid(size_)) //error case
+        return(validMoves);
+    
     for(int i = 0; i < 8; i++)      //using magic number due to 8 possible moves from knight
     {
         if(isValidMove(currentRow + KNIGHT_MOVES[i][0], currentCol + KNIGHT_MOVES[i][1]))   //if offset is valid
@@ -50,8 +55,11 @@ std::vector<std::pair<int, int>> KnightTourBoard::getLegalMoves(int currentRow, 
 }
 
 int KnightTourBoard::countLegalMoves(int row, int col) const {
-    // TODO: implement countLegalMoves to return the number of legal moves from the given position
-    
+    if(!Position(row,col).isValid(size_))
+        return(0);
+
+    std::vector<std::pair<int, int>> validMoves = getLegalMoves(row,col); 
+    return(validMoves.size()); 
 }
 
 void KnightTourBoard::reset() {
@@ -93,11 +101,17 @@ void KnightTourBoard::display() const {
     std::cout << "   +" << std::string(borderWidth, '-') << "+\n";
 }
 
+//note: if visited, has nonzero value depending on move number
 bool KnightTourBoard::isVisited(int row, int col) const {
-    // TODO: implement isVisited to check if the given position has been visited
-    
+    if(!Position(row,col).isValid(size_))
+        return(false);
+
+    return(board_[row][col] != 0); 
 }
 
 int KnightTourBoard::getMoveNumber(int row, int col) const {
+    if(!Position(row,col).isValid(size_))
+        return(0);
+        
     return board_[row][col];
 }
