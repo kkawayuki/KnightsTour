@@ -40,10 +40,10 @@ public:
     int getMoveNumber(int row, int col) const;
 
 private:
-    int size_;
-    std::vector<std::vector<int>> board_;   
-    int currentMoveNumber_;
-    static const int KNIGHT_MOVES[8][2];
+    int size_;                                  //same for width/height (square board)
+    std::vector<std::vector<int>> board_;       //vector of int vectors (2d array)
+    int currentMoveNumber_;                     //keep track of what move we're on
+    static const int KNIGHT_MOVES[8][2];        //knight offsets from current location on board, basic 2d array[][]
 };
 
 #endif // KNIGHTTOUR_BOARD_HPP

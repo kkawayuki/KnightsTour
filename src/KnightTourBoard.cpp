@@ -21,26 +21,32 @@ KnightTourBoard::KnightTourBoard(int size)
 
 KnightTourBoard::~KnightTourBoard() = default;
 
-bool KnightTourBoard::makeMove(int row, int col) {
-    // note: board_ stores
-    if(!isValidMove(row,col))
-    {
-        std::cout << "invalid move!" << '\n';
-        return(1); //return true? fix later
-    }
-    board_
+bool KnightTourBoard::makeMove(int row, int col) { 
+    if(!isValidMove(row,col)) //error case
+        return(0); 
+
 }
 
+// note: board is represented as 2D array, (0,0) at top left corner
+// struct used to hold board information (struct fields public by default)
+// size = row = col (square)
 bool KnightTourBoard::isValidMove(int row, int col) const {
-    // note: board is represented as 2D array, (0,0) at top left corner
-    // struct used to hold board information (struct fields public by default)
-    //size = row = col (square)
-
-    return(row <= board_.size() && col <= board_.size() && !isVisited(row,col));    //isVisited must be false for this to work
+    Position current(row,col);
+    return(current.isValid(this->getSize()) && !isVisited(row,col));    //use position and visited checker 
 }
 
 std::vector<std::pair<int, int>> KnightTourBoard::getLegalMoves(int currentRow, int currentCol) const {
     // note: should return a vector of all valid pairs from the current location
+    std::vector<std::pair<int, int>> validMoves;
+    for(int i = 0; i < 8; i++)      //using magic number due to 8 possible moves from knight
+    {
+        if(isValidMove(currentRow + KNIGHT_MOVES[i][0], currentCol + KNIGHT_MOVES[i][1]))   //if offset is valid
+        {
+            std::pair<int,int> tempValid = {currentRow + KNIGHT_MOVES[i][0], currentCol + KNIGHT_MOVES[i][1]}; 
+            validMoves.push_back(tempValid);
+        }
+    }
+    return(validMoves); 
 }
 
 int KnightTourBoard::countLegalMoves(int row, int col) const {
