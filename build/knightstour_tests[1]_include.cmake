@@ -1,0 +1,5 @@
+if(EXISTS "/Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/build/knightstour_tests[1]_tests.cmake")
+  include("/Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/build/knightstour_tests[1]_tests.cmake")
+else()
+  add_test(knightstour_tests_NOT_BUILT knightstour_tests_NOT_BUILT)
+endif()
