@@ -27,8 +27,7 @@ private:
     double calculateWarnsdorffScore(const KnightTourBoard& board, int row, int col) const;
 
     /// Builds scored move list (lower score == better move).
-    std::vector<ScoredMove> scoreMoves(const KnightTourBoard& board,
-                                       const std::vector<std::pair<int, int>>& legalMoves) const;
+    std::vector<ScoredMove> scoreMoves(const KnightTourBoard& board, const std::vector<std::pair<int, int>>& legalMoves) const;
 };
 
 #endif // AI_PLAYER_HPP
