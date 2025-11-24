@@ -614,30 +614,6 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-gtest/gtestmain.o: gtest/gtestmain.cpp.o
-.PHONY : gtest/gtestmain.o
-
-# target to build an object file
-gtest/gtestmain.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/knightstour_tests.dir/build.make CMakeFiles/knightstour_tests.dir/gtest/gtestmain.cpp.o
-.PHONY : gtest/gtestmain.cpp.o
-
-gtest/gtestmain.i: gtest/gtestmain.cpp.i
-.PHONY : gtest/gtestmain.i
-
-# target to preprocess a source file
-gtest/gtestmain.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/knightstour_tests.dir/build.make CMakeFiles/knightstour_tests.dir/gtest/gtestmain.cpp.i
-.PHONY : gtest/gtestmain.cpp.i
-
-gtest/gtestmain.s: gtest/gtestmain.cpp.s
-.PHONY : gtest/gtestmain.s
-
-# target to generate assembly for a file
-gtest/gtestmain.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/knightstour_tests.dir/build.make CMakeFiles/knightstour_tests.dir/gtest/gtestmain.cpp.s
-.PHONY : gtest/gtestmain.cpp.s
-
 gtest/test_lab.o: gtest/test_lab.cpp.o
 .PHONY : gtest/test_lab.o
 
@@ -841,9 +817,6 @@ help:
 	@echo "... gtest_main"
 	@echo "... knightstour"
 	@echo "... knightstour_tests"
-	@echo "... gtest/gtestmain.o"
-	@echo "... gtest/gtestmain.i"
-	@echo "... gtest/gtestmain.s"
 	@echo "... gtest/test_lab.o"
 	@echo "... gtest/test_lab.i"
 	@echo "... gtest/test_lab.s"

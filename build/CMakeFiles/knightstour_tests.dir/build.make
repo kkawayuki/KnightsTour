@@ -72,24 +72,10 @@ include CMakeFiles/knightstour_tests.dir/flags.make
 CMakeFiles/knightstour_tests.dir/codegen:
 .PHONY : CMakeFiles/knightstour_tests.dir/codegen
 
-CMakeFiles/knightstour_tests.dir/gtest/gtestmain.cpp.o: CMakeFiles/knightstour_tests.dir/flags.make
-CMakeFiles/knightstour_tests.dir/gtest/gtestmain.cpp.o: /Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/gtest/gtestmain.cpp
-CMakeFiles/knightstour_tests.dir/gtest/gtestmain.cpp.o: CMakeFiles/knightstour_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/knightstour_tests.dir/gtest/gtestmain.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/knightstour_tests.dir/gtest/gtestmain.cpp.o -MF CMakeFiles/knightstour_tests.dir/gtest/gtestmain.cpp.o.d -o CMakeFiles/knightstour_tests.dir/gtest/gtestmain.cpp.o -c /Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/gtest/gtestmain.cpp
-
-CMakeFiles/knightstour_tests.dir/gtest/gtestmain.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/knightstour_tests.dir/gtest/gtestmain.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/gtest/gtestmain.cpp > CMakeFiles/knightstour_tests.dir/gtest/gtestmain.cpp.i
-
-CMakeFiles/knightstour_tests.dir/gtest/gtestmain.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/knightstour_tests.dir/gtest/gtestmain.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/gtest/gtestmain.cpp -o CMakeFiles/knightstour_tests.dir/gtest/gtestmain.cpp.s
-
 CMakeFiles/knightstour_tests.dir/gtest/test_lab.cpp.o: CMakeFiles/knightstour_tests.dir/flags.make
 CMakeFiles/knightstour_tests.dir/gtest/test_lab.cpp.o: /Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/gtest/test_lab.cpp
 CMakeFiles/knightstour_tests.dir/gtest/test_lab.cpp.o: CMakeFiles/knightstour_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/knightstour_tests.dir/gtest/test_lab.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/knightstour_tests.dir/gtest/test_lab.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/knightstour_tests.dir/gtest/test_lab.cpp.o -MF CMakeFiles/knightstour_tests.dir/gtest/test_lab.cpp.o.d -o CMakeFiles/knightstour_tests.dir/gtest/test_lab.cpp.o -c /Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/gtest/test_lab.cpp
 
 CMakeFiles/knightstour_tests.dir/gtest/test_lab.cpp.i: cmake_force
@@ -103,7 +89,7 @@ CMakeFiles/knightstour_tests.dir/gtest/test_lab.cpp.s: cmake_force
 CMakeFiles/knightstour_tests.dir/src/AIPlayer.cpp.o: CMakeFiles/knightstour_tests.dir/flags.make
 CMakeFiles/knightstour_tests.dir/src/AIPlayer.cpp.o: /Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/src/AIPlayer.cpp
 CMakeFiles/knightstour_tests.dir/src/AIPlayer.cpp.o: CMakeFiles/knightstour_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/knightstour_tests.dir/src/AIPlayer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/knightstour_tests.dir/src/AIPlayer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/knightstour_tests.dir/src/AIPlayer.cpp.o -MF CMakeFiles/knightstour_tests.dir/src/AIPlayer.cpp.o.d -o CMakeFiles/knightstour_tests.dir/src/AIPlayer.cpp.o -c /Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/src/AIPlayer.cpp
 
 CMakeFiles/knightstour_tests.dir/src/AIPlayer.cpp.i: cmake_force
@@ -117,7 +103,7 @@ CMakeFiles/knightstour_tests.dir/src/AIPlayer.cpp.s: cmake_force
 CMakeFiles/knightstour_tests.dir/src/HumanPlayer.cpp.o: CMakeFiles/knightstour_tests.dir/flags.make
 CMakeFiles/knightstour_tests.dir/src/HumanPlayer.cpp.o: /Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/src/HumanPlayer.cpp
 CMakeFiles/knightstour_tests.dir/src/HumanPlayer.cpp.o: CMakeFiles/knightstour_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/knightstour_tests.dir/src/HumanPlayer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/knightstour_tests.dir/src/HumanPlayer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/knightstour_tests.dir/src/HumanPlayer.cpp.o -MF CMakeFiles/knightstour_tests.dir/src/HumanPlayer.cpp.o.d -o CMakeFiles/knightstour_tests.dir/src/HumanPlayer.cpp.o -c /Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/src/HumanPlayer.cpp
 
 CMakeFiles/knightstour_tests.dir/src/HumanPlayer.cpp.i: cmake_force
@@ -131,7 +117,7 @@ CMakeFiles/knightstour_tests.dir/src/HumanPlayer.cpp.s: cmake_force
 CMakeFiles/knightstour_tests.dir/src/KnightTourBoard.cpp.o: CMakeFiles/knightstour_tests.dir/flags.make
 CMakeFiles/knightstour_tests.dir/src/KnightTourBoard.cpp.o: /Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/src/KnightTourBoard.cpp
 CMakeFiles/knightstour_tests.dir/src/KnightTourBoard.cpp.o: CMakeFiles/knightstour_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/knightstour_tests.dir/src/KnightTourBoard.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/knightstour_tests.dir/src/KnightTourBoard.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/knightstour_tests.dir/src/KnightTourBoard.cpp.o -MF CMakeFiles/knightstour_tests.dir/src/KnightTourBoard.cpp.o.d -o CMakeFiles/knightstour_tests.dir/src/KnightTourBoard.cpp.o -c /Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/src/KnightTourBoard.cpp
 
 CMakeFiles/knightstour_tests.dir/src/KnightTourBoard.cpp.i: cmake_force
@@ -145,7 +131,7 @@ CMakeFiles/knightstour_tests.dir/src/KnightTourBoard.cpp.s: cmake_force
 CMakeFiles/knightstour_tests.dir/src/KnightTourGame.cpp.o: CMakeFiles/knightstour_tests.dir/flags.make
 CMakeFiles/knightstour_tests.dir/src/KnightTourGame.cpp.o: /Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/src/KnightTourGame.cpp
 CMakeFiles/knightstour_tests.dir/src/KnightTourGame.cpp.o: CMakeFiles/knightstour_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/knightstour_tests.dir/src/KnightTourGame.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/knightstour_tests.dir/src/KnightTourGame.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/knightstour_tests.dir/src/KnightTourGame.cpp.o -MF CMakeFiles/knightstour_tests.dir/src/KnightTourGame.cpp.o.d -o CMakeFiles/knightstour_tests.dir/src/KnightTourGame.cpp.o -c /Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/src/KnightTourGame.cpp
 
 CMakeFiles/knightstour_tests.dir/src/KnightTourGame.cpp.i: cmake_force
@@ -158,7 +144,6 @@ CMakeFiles/knightstour_tests.dir/src/KnightTourGame.cpp.s: cmake_force
 
 # Object files for target knightstour_tests
 knightstour_tests_OBJECTS = \
-"CMakeFiles/knightstour_tests.dir/gtest/gtestmain.cpp.o" \
 "CMakeFiles/knightstour_tests.dir/gtest/test_lab.cpp.o" \
 "CMakeFiles/knightstour_tests.dir/src/AIPlayer.cpp.o" \
 "CMakeFiles/knightstour_tests.dir/src/HumanPlayer.cpp.o" \
@@ -168,7 +153,6 @@ knightstour_tests_OBJECTS = \
 # External object files for target knightstour_tests
 knightstour_tests_EXTERNAL_OBJECTS =
 
-bin/knightstour_tests: CMakeFiles/knightstour_tests.dir/gtest/gtestmain.cpp.o
 bin/knightstour_tests: CMakeFiles/knightstour_tests.dir/gtest/test_lab.cpp.o
 bin/knightstour_tests: CMakeFiles/knightstour_tests.dir/src/AIPlayer.cpp.o
 bin/knightstour_tests: CMakeFiles/knightstour_tests.dir/src/HumanPlayer.cpp.o
@@ -178,7 +162,7 @@ bin/knightstour_tests: CMakeFiles/knightstour_tests.dir/build.make
 bin/knightstour_tests: lib/libgtest_main.a
 bin/knightstour_tests: lib/libgtest.a
 bin/knightstour_tests: CMakeFiles/knightstour_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable bin/knightstour_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable bin/knightstour_tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/knightstour_tests.dir/link.txt --verbose=$(VERBOSE)
 	/Applications/CMake.app/Contents/bin/cmake -D TEST_TARGET=knightstour_tests -D TEST_EXECUTABLE=/Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/build/bin/knightstour_tests -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/build -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=knightstour_tests_TESTS -D CTEST_FILE=/Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/build/knightstour_tests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_DISCOVERY_EXTRA_ARGS= -D TEST_XML_OUTPUT_DIR= -P /Applications/CMake.app/Contents/share/cmake-4.1/Modules/GoogleTestAddTests.cmake
 

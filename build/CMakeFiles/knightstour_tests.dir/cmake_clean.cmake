@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/knightstour_tests.dir/gtest/gtestmain.cpp.o"
-  "CMakeFiles/knightstour_tests.dir/gtest/gtestmain.cpp.o.d"
   "CMakeFiles/knightstour_tests.dir/gtest/test_lab.cpp.o"
   "CMakeFiles/knightstour_tests.dir/gtest/test_lab.cpp.o.d"
   "CMakeFiles/knightstour_tests.dir/src/AIPlayer.cpp.o"

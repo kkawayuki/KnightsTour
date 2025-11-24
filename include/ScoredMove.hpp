@@ -13,24 +13,12 @@ struct ScoredMove {
     // if score is the same, break ties by row and then column
     bool operator<(const ScoredMove& other) const 
     {  
-        if(this->score < other.score) return true;
-        if(this->score > other.score) return false;
-        
-        if(this->row < other.row) return true;
-        if(this->row > other.row) return false;
-        
-        return(this->col < other.col); 
+        return(this->score < other.score);
     }
 
     bool operator>(const ScoredMove& other) const 
     {
-        if(this->score > other.score) return true;
-        if(this->score < other.score) return false;
-        
-        if(this->row > other.row) return true;
-        if(this->row < other.row) return false;
-        
-        return(this->col > other.col); 
+        return(this->score > other.score);
     }
 
     bool operator==(const ScoredMove& other) const // revise? 

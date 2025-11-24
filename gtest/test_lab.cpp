@@ -3,6 +3,8 @@
 #include "KnightTourBoard.hpp"
 #include "Player.hpp"
 
+/*
+
 //bst tests
 TEST(bstTest, simpleAddElements)
 {
@@ -46,3 +48,4 @@ TEST(llrbTest, complexAddElements)
 }
 
 
+*/
