@@ -4,6 +4,7 @@
 # GTEST_SRC at CMakeLists.txt:49 (file)
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "/Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/gtest/*.cpp")
 set(OLD_GLOB
+  "/Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/gtest/gtestmain.cpp"
   "/Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/gtest/test_lab.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")

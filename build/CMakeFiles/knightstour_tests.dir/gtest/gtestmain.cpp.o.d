@@ -1,5 +1,5 @@
-CMakeFiles/knightstour_tests.dir/gtest/test_lab.cpp.o: \
-  /Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/gtest/test_lab.cpp \
+CMakeFiles/knightstour_tests.dir/gtest/gtestmain.cpp.o: \
+  /Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/gtest/gtestmain.cpp \
   /Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/build/_deps/googletest-src/googletest/include/gtest/gtest.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstddef \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
@@ -853,8 +853,4 @@ CMakeFiles/knightstour_tests.dir/gtest/test_lab.cpp.o: \
   /Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/build/_deps/googletest-src/googletest/include/gtest/gtest-test-part.h \
   /Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/build/_deps/googletest-src/googletest/include/gtest/gtest-typed-test.h \
   /Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/build/_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h \
-  /Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/build/_deps/googletest-src/googletest/include/gtest/gtest_prod.h \
-  /Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/include/BinaryTree.hpp \
-  /Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/include/BinaryTree.tpp \
-  /Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/include/KnightTourBoard.hpp \
-  /Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/include/Player.hpp
+  /Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/build/_deps/googletest-src/googletest/include/gtest/gtest_prod.h

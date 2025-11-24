@@ -1114,12 +1114,12 @@ CMakeFiles/knightstour_tests.dir/all: _deps/googletest-build/googletest/CMakeFil
 CMakeFiles/knightstour_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/knightstour_tests.dir/build.make CMakeFiles/knightstour_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/knightstour_tests.dir/build.make CMakeFiles/knightstour_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/build/CMakeFiles --progress-num=15,16,17,18,19,20 "Built target knightstour_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/build/CMakeFiles --progress-num=15,16,17,18,19,20,21 "Built target knightstour_tests"
 .PHONY : CMakeFiles/knightstour_tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/knightstour_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/build/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/knightstour_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/build/CMakeFiles 0
 .PHONY : CMakeFiles/knightstour_tests.dir/rule
@@ -1131,7 +1131,7 @@ knightstour_tests: CMakeFiles/knightstour_tests.dir/rule
 # codegen rule for target.
 CMakeFiles/knightstour_tests.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/knightstour_tests.dir/build.make CMakeFiles/knightstour_tests.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/build/CMakeFiles --progress-num=15,16,17,18,19,20 "Finished codegen for target knightstour_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/kentkawashima/Coding/kkawaC++/ICS46/KnightsTour/build/CMakeFiles --progress-num=15,16,17,18,19,20,21 "Finished codegen for target knightstour_tests"
 .PHONY : CMakeFiles/knightstour_tests.dir/codegen
 
 # clean rule for target.
