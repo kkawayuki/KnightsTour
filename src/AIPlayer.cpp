@@ -50,26 +50,56 @@ SolveSummary AIPlayer::solveTour( KnightTourBoard& board, int startRow, int star
     resetStats();
     board.reset();
 
+    std::vector<ScoredMove> currScored;
     int currRow = startRow;
     int currCol = startCol;
-    board.makeMove(currRow, currCol);
-    std::vector<ScoredMove> currScored; 
-    
-    //may need to reimplement to use BST 
-    while(board.getMoveNumber(currRow, currCol) < maxMoves)
+    std::vector<int> bstHeights; 
+    std::vector<int> llrbHeights; 
+    int bstTotalHeight = 0;
+    int llrbTotalHeight = 0;
+
+    board.makeMove(currRow, currCol);   //make initial move to center of board
+
+    for(int i = 0; board.getMoveNumber(currRow, currCol) < maxMoves; i++)
     {
+        //create trees for current loop
+        BinaryTree<ScoredMove> bstTree(BinaryTree<ScoredMove>::TreeType::BST);
+        BinaryTree<ScoredMove> llrbTree(BinaryTree<ScoredMove>::TreeType::LLRB);
+
         currScored = scoreMoves(board, board.getLegalMoves(currRow, currCol)); //get vector of scored moves
 
-        //move scored into BST/LLRB tree
-        //Select the minimum scored move from BST.
-        //Track tree heights and performance metrics.
-        //Repeat until the tour is complete or no moves remain.
+        for(int j = 0; i < currScored.size(); j++)  //populate each search tree with all possible moves
+        {
+            bstTree.insert(currScored[j]);
+            llrbTree.insert(currScored[j]);
+        }
+
+        //find and execute move with smallest warnsdorff score
+        const ScoredMove* min = bstTree.findMin(); 
+        if(min == nullptr)
+            break;
+        board.makeMove(min->row, min->col);        
+
+        //track tree heights/performance metrics
+        bstHeights.push_back(bstTree.getHeight());
+        llrbHeights.push_back(llrbTree.getHeight());
+
+        if(bstHeights[i] > summary.bstMaxHeight) 
+            summary.bstMaxHeight = bstHeights[i]; 
+        if(llrbHeights[i] > summary.llrbMaxHeight) 
+            summary.llrbMaxHeight = llrbHeights[i]; 
 
     }
 
-    //game completion
-    
-    //set summary fields
+    //calculate total from vectors
+    for(int i = 0; i < bstHeights.size(); i++) bstTotalHeight += bstHeights[i];
+    for(int i = 0; i < llrbHeights.size(); i++) llrbTotalHeight += llrbHeights[i];
+
+    //finish setting summary fields
+    summary.maxPossibleMoves = board.getSize()*board.getSize(); 
+    summary.solved = (board.getMoveNumber(currRow,currCol) == summary.maxPossibleMoves); 
+    summary.bstAverageHeight = bstTotalHeight/bstHeights.size();
+    summary.llrbAverageHeight = llrbTotalHeight/llrbHeights.size();
     
     return summary;
 }

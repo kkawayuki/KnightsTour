@@ -35,7 +35,7 @@ struct ScoredMove {
 
     bool operator==(const ScoredMove& other) const // revise? 
     { 
-        return(this->score == other.score); 
+        return(this->score == other.score && this->row == other.row && this->col == other.col); 
     }
 
     bool operator!=(const ScoredMove& other) const { return !(*this == other); }
