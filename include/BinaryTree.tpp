@@ -18,10 +18,18 @@ void BinaryTree<T>::destroy(Node* node) {
     delete node;
 }
 
+//case handler for insert depending on type of tree
 template <typename T>
 void BinaryTree<T>::insert(const T& item) {
-    // TODO: implement insert of item for both BST and LLRB
-
+    if(treeType_ == TreeType::BST)
+        insertBST(root_, item);
+    else if(treeType == TreeType::LLRB)
+        insertLLRB(root_, item);
+    else
+    {
+        std::cout << "invalid tree type\n";
+        return;
+    }
 }
 
 template <typename T>
@@ -53,6 +61,7 @@ int BinaryTree<T>::height(Node* node) const {
     return 1 + std::max(left, right);
 }
 
+//uses recursive approach to locate area to add node, insert there
 template <typename T>
 typename BinaryTree<T>::Node* BinaryTree<T>::insertBST(Node* node, const T& item) {
     if (!node) {
@@ -68,16 +77,16 @@ typename BinaryTree<T>::Node* BinaryTree<T>::insertBST(Node* node, const T& item
     return node;
 }
 
+//insert item for LLRB while maintaining LLRB properties
 template <typename T>
 typename BinaryTree<T>::Node* BinaryTree<T>::insertLLRB(Node* node, const T& item) {
-    // TODO: implement insert of item for LLRB while maintaining LLRB properties
     
 }
 
+// check if a node is red (for LLRB)
 template <typename T>
 bool BinaryTree<T>::isRed(Node* node) const {
-    // TODO: implement isRed to check if a node is red (for LLRB)
-    
+    return(node->red);
 }
 
 template <typename T>

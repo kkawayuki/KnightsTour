@@ -60,21 +60,11 @@ SolveSummary AIPlayer::solveTour( KnightTourBoard& board, int startRow, int star
     {
         currScored = scoreMoves(board, board.getLegalMoves(currRow, currCol)); //get vector of scored moves
 
-        //choose lowest
-        ScoredMove temp(currScored[0].row, currScored[0].col, currScored[0].score); 
-        for(int i = 0; i < currScored.size()-1; i++)
-        {
-            if(currScored[i] < currScored[i+1]) //use overloaded operator 
-            {
-                temp.row = currScored[i].row;    //use pair notation for referencing
-                temp.col = currScored[i].col;
-                temp.score = currScored[i].score;  //use current stored to calculate warnsdorff
-            }
-        }
+        //move scored into BST/LLRB tree
+        //Select the minimum scored move from BST.
+        //Track tree heights and performance metrics.
+        //Repeat until the tour is complete or no moves remain.
 
-        board.makeMove(temp.row, temp.col); //move to lowest Warnsdorff score location
-        currRow = temp.row;                 //update location
-        currCol = temp.col;
     }
 
     //game completion
