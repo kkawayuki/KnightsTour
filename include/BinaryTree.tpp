@@ -144,44 +144,37 @@ bool BinaryTree<T>::isRed(Node *node) const
 template <typename T>
 typename BinaryTree<T>::Node *BinaryTree<T>::rotateLeft(Node *node) 
 {
-    Node* rightChild = node->right;
-    Node* rightChildLeft = rightChild->left; 
+    Node *p = node->right; 
+    
+    node->right = p->left;  //move children
+    p->left = node;        //reconnect node
 
-    rightChild->left = node;
-    node->right = rightChildLeft;
+    p->red = node->red;     //p gets color previous
+    node->red = true;       //left link now red instead of right
 
-    bool tempColor = node->red;
-    node->red = rightChild->red;      
-    rightChild->red = tempColor; 
-
-    return(rightChild); //return new root of subtree
+    return(p); 
 }
 
 // when two reds on left, rotate right
 template <typename T>
 typename BinaryTree<T>::Node *BinaryTree<T>::rotateRight(Node *node)
 {
-    Node* leftChild = node->left; 
-    Node* leftChildRight = node->left->right;
-    
-    leftChild->right = node;
-    node->left = leftChildRight;
+    Node *p = node->left;
 
-    bool tempColor = node->red;
-    node->red = leftChild->red;
-    leftChild->red = tempColor;
+    node->left = p->right;  //move children
+    p->right = node;        //reconnect node
 
-    return(leftChild);
+    p->red = node->red;     
+    node->red = true;
+
+    return(p);
 }
 
 //flip color when node has two red children
 template <typename T>
 void BinaryTree<T>::flipColors(Node *node)
 {
-    Node* leftChild = node->left;
-    Node* rightChild = node->right;
-
-    leftChild->red = false;
-    rightChild->red = false;
-    node->red = true;
-}
+    node->left->red = false;    //update children 
+    node->right->red = false;
+    node->red = true;           //update self
+}       
